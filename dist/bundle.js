@@ -94,7 +94,19 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _router_index_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./router/index.router */ \"./src/router/index.router.js\");\n\n\n\n\n\nconst atrapaHast = () => {\n    Object(_router_index_router__WEBPACK_IMPORTED_MODULE_1__[\"router\"])(window.location.hash)\n}\n\nwindow.addEventListener(\"hashchange\", atrapaHast)\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/router/index.router.js":
+/*!************************************!*\
+  !*** ./src/router/index.router.js ***!
+  \************************************/
+/*! exports provided: router */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"router\", function() { return router; });\nconst router = (router) => {\n    switch(router){\n        case '#/':\n            console.log(\"Home\")\n            break\n        case '#/about':\n            console.log(\"hacerca de\")\n            break\n        case '#/more':\n            console.log(\"Mas\")\n            break\n        default:\n            console.log(\"404\")\n    }\n}\n\n//# sourceURL=webpack:///./src/router/index.router.js?");
 
 /***/ }),
 
