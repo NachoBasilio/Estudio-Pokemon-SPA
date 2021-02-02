@@ -1,0 +1,89 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+.cabecera{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255,255,255);
+    background: linear-gradient(rgba(242,242,242,1) 0%, rgba(255,255,255,1) 78%, rgba(255,255,255,1) 100%);
+    height: auto;
+    width: 100%;
+}
+
+
+.cabecera-contenedorIMG{
+    width: 120px;
+    height: 120px;
+}
+
+
+.cabecera-icono{
+    width: 100%;
+    height: 100%;
+}
+
+.cabecera-lista{
+    display: flex;
+    text-align: center;
+    font-size: 4rem;
+    list-style-type:none;
+    flex-direction: column;
+    height: auto;
+}
+
+
+.cabecera-lista a{
+    color: black;
+    font-family: 'Nunito Sans', sans-serif;
+    text-decoration: none;
+    
+}
+.cabecera-lista a:visited{
+    background: rgba(167, 167, 167, 0.8);
+}
+
+.lista-prebotones1{
+    margin-top: 10px;
+}
+
+.lista-prebotones2{
+    margin-top: 20px;
+}
+
+.lista-botones{
+    border: solid black 3px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+@media only screen and (min-width: 650px) {
+    .cabecera{
+        flex-direction: unset;
+        justify-content: unset;
+    }
+    .cabecera-lista{
+        flex: 1;
+        justify-content: flex-end;
+        flex-direction: unset;
+    }
+    .lista-prebotones1{
+        margin: 0 15px;
+        
+    }
+    .lista-prebotones2{
+        margin: 0 15px;
+        
+
+    }
+    .cabecera-contenedorIMG{
+        width: 120px;
+        height: 120px;
+        margin: 15px;
+    }
+  }
