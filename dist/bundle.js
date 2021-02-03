@@ -98,6 +98,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _vie
 
 /***/ }),
 
+/***/ "./src/controllers/creatuequipo.controller.js":
+/*!****************************************************!*\
+  !*** ./src/controllers/creatuequipo.controller.js ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _views_crea_tu_equipo_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../views/crea-tu-equipo.html */ \"./src/views/crea-tu-equipo.html\");\n/* harmony import */ var _views_crea_tu_equipo_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_views_crea_tu_equipo_html__WEBPACK_IMPORTED_MODULE_0__);\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (() => {\n    const elemento = document.createElement(\"div\")\n    elemento.classList = \"contenedor-pokemon\"\n    elemento.innerHTML = _views_crea_tu_equipo_html__WEBPACK_IMPORTED_MODULE_0___default.a\n\n    return elemento\n});\n\n//# sourceURL=webpack:///./src/controllers/creatuequipo.controller.js?");
+
+/***/ }),
+
 /***/ "./src/controllers/home.controller.js":
 /*!********************************************!*\
   !*** ./src/controllers/home.controller.js ***!
@@ -130,7 +142,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _vie
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _router_index_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./router/index.router */ \"./src/router/index.router.js\");\n\n\n\n\n\nconst atrapaHast = () => {\n    Object(_router_index_router__WEBPACK_IMPORTED_MODULE_1__[\"router\"])(window.location.hash)\n}\n\nwindow.addEventListener(\"hashchange\", atrapaHast)\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _router_index_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./router/index.router */ \"./src/router/index.router.js\");\n\n\n\n\n\nconst atrapaHast = () => {\n    Object(_router_index_router__WEBPACK_IMPORTED_MODULE_1__[\"router\"])(window.location.hash)\n}\n\nwindow.addEventListener(\"hashchange\", atrapaHast)\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
@@ -142,7 +154,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"router\", function() { return router; });\n/* harmony import */ var _controllers_buscador_controller__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../controllers/buscador.controller */ \"./src/controllers/buscador.controller.js\");\n/* harmony import */ var _controllers_home_controller__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../controllers/home.controller */ \"./src/controllers/home.controller.js\");\n/* harmony import */ var _controllers_six_random_controller__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../controllers/six-random.controller */ \"./src/controllers/six-random.controller.js\");\n\n\n\n\nlet secction = document.getElementById('contenido')\n\n\n\nconst router = (router) => {\n    switch(router){\n        case '#/':{\n            secction.innerHTML = ''\n            return secction.appendChild(Object(_controllers_home_controller__WEBPACK_IMPORTED_MODULE_1__[\"default\"])())\n        }\n        case '#/creatuequipo':\n            console.log(\"hacerca de\")\n            break\n        case '#/six-random':{\n            secction.innerHTML = ''\n            return secction.appendChild(Object(_controllers_six_random_controller__WEBPACK_IMPORTED_MODULE_2__[\"default\"])())\n        }\n        case '#/buscador':{\n            secction.innerHTML = ''\n            return secction.appendChild(Object(_controllers_buscador_controller__WEBPACK_IMPORTED_MODULE_0__[\"default\"])())\n        }\n        default:\n            console.log(\"404\")\n    }\n}\n\n//# sourceURL=webpack:///./src/router/index.router.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"router\", function() { return router; });\n/* harmony import */ var _controllers_buscador_controller__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../controllers/buscador.controller */ \"./src/controllers/buscador.controller.js\");\n/* harmony import */ var _controllers_home_controller__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../controllers/home.controller */ \"./src/controllers/home.controller.js\");\n/* harmony import */ var _controllers_six_random_controller__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../controllers/six-random.controller */ \"./src/controllers/six-random.controller.js\");\n/* harmony import */ var _controllers_creatuequipo_controller__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../controllers/creatuequipo.controller */ \"./src/controllers/creatuequipo.controller.js\");\n\n\n\n\n\nlet secction = document.getElementById('contenido')\n\n\n\nconst router = (router) => {\n    switch(router){\n        case '#/':{\n            secction.innerHTML = ''\n            return secction.appendChild(Object(_controllers_home_controller__WEBPACK_IMPORTED_MODULE_1__[\"default\"])())\n        }\n        case '#/creatuequipo':{\n                secction.innerHTML = ''\n                return secction.appendChild(Object(_controllers_creatuequipo_controller__WEBPACK_IMPORTED_MODULE_3__[\"default\"])())\n            }\n        case '#/six-random':{\n            secction.innerHTML = ''\n            return secction.appendChild(Object(_controllers_six_random_controller__WEBPACK_IMPORTED_MODULE_2__[\"default\"])())\n        }\n        case '#/buscador':{\n            secction.innerHTML = ''\n            return secction.appendChild(Object(_controllers_buscador_controller__WEBPACK_IMPORTED_MODULE_0__[\"default\"])())\n        }\n        default:\n            console.log(\"404\")\n    }\n}\n\n//# sourceURL=webpack:///./src/router/index.router.js?");
 
 /***/ }),
 
@@ -166,6 +178,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /***/ (function(module, exports) {
 
 eval("// Module\nvar code = \"<p class=\\\"buscador-text\\\">Busca el pokemon que quieras:</p>\\n<input class=\\\"buscador-input\\\" type=\\\"text\\\">\\n<button class=\\\"buscador-button\\\">ok</button>\\n\";\n// Exports\nmodule.exports = code;\n\n//# sourceURL=webpack:///./src/views/buscador.html?");
+
+/***/ }),
+
+/***/ "./src/views/crea-tu-equipo.html":
+/*!***************************************!*\
+  !*** ./src/views/crea-tu-equipo.html ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// Module\nvar code = \"<figure class=\\\"pokemon\\\" id=\\\"pokemon1\\\"></figure>\\n<figure class=\\\"pokemon\\\" id=\\\"pokemon2\\\"></figure>\\n<figure class=\\\"pokemon\\\" id=\\\"pokemon3\\\"></figure>\\n<figure class=\\\"pokemon\\\" id=\\\"pokemon4\\\"></figure>\\n<figure class=\\\"pokemon\\\" id=\\\"pokemon5\\\"></figure>\\n<figure class=\\\"pokemon\\\" id=\\\"pokemon6\\\"></figure>\";\n// Exports\nmodule.exports = code;\n\n//# sourceURL=webpack:///./src/views/crea-tu-equipo.html?");
 
 /***/ }),
 

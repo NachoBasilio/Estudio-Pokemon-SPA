@@ -8,3 +8,4 @@ const atrapaHast = () => {
 }
 
 window.addEventListener("hashchange", atrapaHast)
+

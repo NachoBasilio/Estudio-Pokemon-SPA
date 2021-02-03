@@ -1,6 +1,7 @@
 import buscador from "../controllers/buscador.controller"
 import home from "../controllers/home.controller"
 import sixrandom from "../controllers/six-random.controller"
+import creatuequipo from "../controllers/creatuequipo.controller"
 
 let secction = document.getElementById('contenido')
 
@@ -12,9 +13,10 @@ export const router = (router) => {
             secction.innerHTML = ''
             return secction.appendChild(home())
         }
-        case '#/creatuequipo':
-            console.log("hacerca de")
-            break
+        case '#/creatuequipo':{
+                secction.innerHTML = ''
+                return secction.appendChild(creatuequipo())
+            }
         case '#/six-random':{
             secction.innerHTML = ''
             return secction.appendChild(sixrandom())
