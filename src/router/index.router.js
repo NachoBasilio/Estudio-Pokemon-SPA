@@ -2,7 +2,7 @@ import {page} from '../controllers/index'
 
 let secction = document.getElementById('contenido')
 
-export const router = (router) => {
+export  const router = async (router) => {
     switch(router){
         case '#/':{
             secction.innerHTML = ''
@@ -18,7 +18,7 @@ export const router = (router) => {
         }
         case '#/buscador':{
             secction.innerHTML = ''
-            return secction.appendChild( page.buscador())
+            return secction.appendChild( await page.buscador())
         }
         default:
             console.log("404")

@@ -112,7 +112,10 @@
     width: auto;
     margin-top: 30%;
     text-align: center;
+    
 }
+
+
 
 .buscador-input{
     font-size: 2rem;
@@ -193,4 +196,21 @@
         width: 67%;
         margin: 0 auto;
     }
+
+    .contenido{
+        margin: 5% auto;
+    }
+}
+
+
+.pokemon-buscador{
+    margin: 20px auto;
+    width: 400px;
+    height: 500px;
+    
+}
+
+.pokemon-img{
+    width: 100%;
+    height: 100%;
 }
