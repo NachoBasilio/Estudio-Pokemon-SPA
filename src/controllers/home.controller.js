@@ -1,8 +1,7 @@
-import views from "../views/buscador.html"
+import views from "../views/home.html"
 
 export default () => {
     const elemento = document.createElement("div")
-    elemento.classList = "buscador"
     elemento.innerHTML = views
 
     return elemento

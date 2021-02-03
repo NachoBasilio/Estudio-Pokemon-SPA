@@ -94,7 +94,19 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _views_buscador_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../views/buscador.html */ \"./src/views/buscador.html\");\n/* harmony import */ var _views_buscador_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_views_buscador_html__WEBPACK_IMPORTED_MODULE_0__);\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (() => {\n    const elemento = document.createElement(\"div\")\n    elemento.innerHTML = _views_buscador_html__WEBPACK_IMPORTED_MODULE_0___default.a\n\n    return elemento\n});\n\n//# sourceURL=webpack:///./src/controllers/buscador.controller.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _views_buscador_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../views/buscador.html */ \"./src/views/buscador.html\");\n/* harmony import */ var _views_buscador_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_views_buscador_html__WEBPACK_IMPORTED_MODULE_0__);\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (() => {\n    const elemento = document.createElement(\"div\")\n    elemento.classList = \"buscador\"\n    elemento.innerHTML = _views_buscador_html__WEBPACK_IMPORTED_MODULE_0___default.a\n\n    return elemento\n});\n\n//# sourceURL=webpack:///./src/controllers/buscador.controller.js?");
+
+/***/ }),
+
+/***/ "./src/controllers/home.controller.js":
+/*!********************************************!*\
+  !*** ./src/controllers/home.controller.js ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _views_home_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../views/home.html */ \"./src/views/home.html\");\n/* harmony import */ var _views_home_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_views_home_html__WEBPACK_IMPORTED_MODULE_0__);\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (() => {\n    const elemento = document.createElement(\"div\")\n    elemento.innerHTML = _views_home_html__WEBPACK_IMPORTED_MODULE_0___default.a\n\n    return elemento\n});\n\n//# sourceURL=webpack:///./src/controllers/home.controller.js?");
 
 /***/ }),
 
@@ -118,7 +130,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"router\", function() { return router; });\n/* harmony import */ var _controllers_buscador_controller__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../controllers/buscador.controller */ \"./src/controllers/buscador.controller.js\");\n\n\n\nlet secction = document.getElementById('contenido')\n\n\n\nconst router = (router) => {\n    switch(router){\n        case '#/':\n            console.log(\"Home\")\n            break\n        case '#/creatuequipo':\n            console.log(\"hacerca de\")\n            break\n        case '#/six-random':\n            console.log(\"Mas\")\n            break\n        case '#/buscador':{\n            secction.innerHTML = ''\n            return secction.appendChild(Object(_controllers_buscador_controller__WEBPACK_IMPORTED_MODULE_0__[\"default\"])())\n        }\n            break\n        default:\n            console.log(\"404\")\n    }\n}\n\n//# sourceURL=webpack:///./src/router/index.router.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"router\", function() { return router; });\n/* harmony import */ var _controllers_buscador_controller__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../controllers/buscador.controller */ \"./src/controllers/buscador.controller.js\");\n/* harmony import */ var _controllers_home_controller__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../controllers/home.controller */ \"./src/controllers/home.controller.js\");\n\n\n\nlet secction = document.getElementById('contenido')\n\n\n\nconst router = (router) => {\n    switch(router){\n        case '#/':{\n            secction.innerHTML = ''\n            return secction.appendChild(Object(_controllers_home_controller__WEBPACK_IMPORTED_MODULE_1__[\"default\"])())\n        }\n            break\n        case '#/creatuequipo':\n            console.log(\"hacerca de\")\n            break\n        case '#/six-random':\n            console.log(\"Mas\")\n            break\n        case '#/buscador':{\n            secction.innerHTML = ''\n            return secction.appendChild(Object(_controllers_buscador_controller__WEBPACK_IMPORTED_MODULE_0__[\"default\"])())\n        }\n            break\n        default:\n            console.log(\"404\")\n    }\n}\n\n//# sourceURL=webpack:///./src/router/index.router.js?");
 
 /***/ }),
 
@@ -141,7 +153,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// Module\nvar code = \"<input type=\\\"text\\\">\\n<p>Busca el pokemon que quieras </p>\";\n// Exports\nmodule.exports = code;\n\n//# sourceURL=webpack:///./src/views/buscador.html?");
+eval("// Module\nvar code = \"<p class=\\\"buscador-text\\\">Busca el pokemon que quieras:</p>\\n<input class=\\\"buscador-input\\\" type=\\\"text\\\">\\n<button class=\\\"buscador-button\\\">ok</button>\\n\";\n// Exports\nmodule.exports = code;\n\n//# sourceURL=webpack:///./src/views/buscador.html?");
+
+/***/ }),
+
+/***/ "./src/views/home.html":
+/*!*****************************!*\
+  !*** ./src/views/home.html ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// Module\nvar code = \"<p class=\\\"contenido-presentacion\\\">Esta página web está hecha aplicando gran parte de los conocimientos adquiridos en PLATZI.</p>\";\n// Exports\nmodule.exports = code;\n\n//# sourceURL=webpack:///./src/views/home.html?");
 
 /***/ })
 

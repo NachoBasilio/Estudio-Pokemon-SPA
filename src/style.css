@@ -3,6 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-size: 62.5%;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 
@@ -103,4 +104,25 @@
 .contenido-presentacion{
     font-size: 3rem;
     margin-top: 20%;
+}
+
+.buscador{
+    width: auto;
+    margin-top: 20%;
+    text-align: center;
+}
+
+.buscador-input{
+    font-size: 2rem;
+    margin-top: 15px;
+}
+
+.buscador-text{
+    font-size: 3rem;
+}
+
+.buscador-button{
+    font-size: 2rem;
+    padding-left: 5px;
+    padding-right: 5px;
 }

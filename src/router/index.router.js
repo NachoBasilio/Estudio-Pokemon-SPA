@@ -1,5 +1,5 @@
 import buscador from "../controllers/buscador.controller"
-
+import home from "../controllers/home.controller"
 
 let secction = document.getElementById('contenido')
 
@@ -7,8 +7,10 @@ let secction = document.getElementById('contenido')
 
 export const router = (router) => {
     switch(router){
-        case '#/':
-            console.log("Home")
+        case '#/':{
+            secction.innerHTML = ''
+            return secction.appendChild(home())
+        }
             break
         case '#/creatuequipo':
             console.log("hacerca de")
