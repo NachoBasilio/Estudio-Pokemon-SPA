@@ -17,6 +17,7 @@
     background: linear-gradient(rgba(242,242,242,1) 0%, rgba(255,255,255,1) 78%, rgba(255,255,255,1) 100%);
     height: auto;
     width: 100%;
+    padding-top: 15px;
 }
 
 
@@ -69,6 +70,7 @@
     .cabecera{
         flex-direction: unset;
         justify-content: unset;
+        padding-top: 0;
     }
     .cabecera-lista{
         flex: 1;
@@ -81,8 +83,6 @@
     }
     .lista-prebotones2{
         margin: 0 15px;
-        
-
     }
     .cabecera-contenedorIMG{
         width: 120px;
@@ -100,15 +100,17 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    text-align: center;
 }
 .contenido-presentacion{
-    font-size: 3rem;
-    margin-top: 20%;
+    font-size: 2.5rem;
+    margin-top: 30%;
+    padding:0 3px;
 }
 
 .buscador{
     width: auto;
-    margin-top: 20%;
+    margin-top: 30%;
     text-align: center;
 }
 
@@ -125,4 +127,54 @@
     font-size: 2rem;
     padding-left: 5px;
     padding-right: 5px;
+}
+
+@media only screen and (min-width: 650px){
+    .buscador{   
+        margin-top: 20%;
+    }
+
+    .contenido-presentacion{
+        font-size: 3rem;
+    }
+}
+
+.contenedor-pokemon{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokemon{
+    margin: 5px;
+    width: 120px;
+    height: 160px;
+    background-color: black;
+}
+
+@media only screen and (min-width: 425px){
+
+    .contenedor-pokemon{
+        margin-top: 10px;
+    }
+
+    .pokemon{
+        margin: 5px;
+        width: 200px;
+        height: 260px;
+        
+    }
+
+}
+
+@media only screen and (min-width: 768px){
+
+    .contenedor-pokemon{
+        width: 650px;
+        margin: 0 auto;
+    }
 }
