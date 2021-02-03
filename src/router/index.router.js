@@ -1,29 +1,24 @@
-import buscador from "../controllers/buscador.controller"
-import home from "../controllers/home.controller"
-import sixrandom from "../controllers/six-random.controller"
-import creatuequipo from "../controllers/creatuequipo.controller"
+import {page} from '../controllers/index'
 
 let secction = document.getElementById('contenido')
-
-
 
 export const router = (router) => {
     switch(router){
         case '#/':{
             secction.innerHTML = ''
-            return secction.appendChild(home())
+            return secction.appendChild(page.home())
         }
         case '#/creatuequipo':{
                 secction.innerHTML = ''
-                return secction.appendChild(creatuequipo())
+                return secction.appendChild(page.creatuequipo())
             }
         case '#/six-random':{
             secction.innerHTML = ''
-            return secction.appendChild(sixrandom())
+            return secction.appendChild(page.sixrandom())
         }
         case '#/buscador':{
             secction.innerHTML = ''
-            return secction.appendChild(buscador())
+            return secction.appendChild( page.buscador())
         }
         default:
             console.log("404")
