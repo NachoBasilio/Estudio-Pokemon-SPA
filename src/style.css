@@ -5,6 +5,8 @@
     font-size: 62.5%;
 }
 
+
+/* HEADER */
 .cabecera{
     display: flex;
     flex-direction: column;
@@ -87,3 +89,18 @@
         margin: 15px;
     }
   }
+
+/* HEADER */
+
+
+/* SECTION */
+.contenido{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.contenido-presentacion{
+    font-size: 3rem;
+    margin-top: 20%;
+}
